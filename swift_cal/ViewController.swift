@@ -11,7 +11,24 @@ import UIKit
 class ViewController: UIViewController {
 
     //ボタンを作成
-    let btn1: UIButton = UIButton()
+//    let btn1: UIButton = UIButton()
+    
+    @IBOutlet var btn0 : UIButton!
+    @IBOutlet var btn1 : UIButton!
+    @IBOutlet var btn2 : UIButton!
+    @IBOutlet var btn3 : UIButton!
+    @IBOutlet var btn4 : UIButton!
+    @IBOutlet var btn5 : UIButton!
+    @IBOutlet var btn6 : UIButton!
+    @IBOutlet var btn7 : UIButton!
+    @IBOutlet var btn8 : UIButton!
+    @IBOutlet var btn9 : UIButton!
+    @IBOutlet var label1 : UILabel!
+    
+    var num1 = 0
+    var num2 = 0
+    var ope = 0
+    
 
     
     
@@ -64,6 +81,26 @@ class ViewController: UIViewController {
         self.view.addSubview(mylabel)
     
     }
+    
+    @IBAction func plus(){
+        
+        label1.text = "\(num1)"
+    }
+    @IBAction func push1(){
+        num1=num1*10+1
+        
+        label1.text = "\(num1)"
+    }
+    @IBAction func push2(){
+        if (ope != 0){
+            
+        }
+        num1=num1*10+2
+        
+        label1.text = "\(num1)"
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
