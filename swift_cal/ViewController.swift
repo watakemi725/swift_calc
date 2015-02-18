@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     var num1 = 0
     var num2 = 0
+    var num3 = 0
     var ope = 0
     
 
@@ -84,7 +85,7 @@ class ViewController: UIViewController {
     
     @IBAction func plus(){
         
-        label1.text = "\(num1)"
+        ope = 1
     }
     @IBAction func push1(){
         num1=num1*10+1
@@ -93,13 +94,28 @@ class ViewController: UIViewController {
     }
     @IBAction func push2(){
         if (ope != 0){
-            
+            num1=num1*10+2
+            label1.text = "\(num1)"
+        }else{
+            num2=num2*10+2
+            label1.text = "\(num2)"
         }
-        num1=num1*10+2
         
-        label1.text = "\(num1)"
+        
     }
-    
+    @IBAction func equal(){
+        switch(ope){
+            case (1)
+                num3 = num1 + num2
+            break
+            case (2)
+                num3 = num1 - num2
+            break
+        }
+        
+        
+        label1.text = "\(num3)"
+    }
     
 
     override func didReceiveMemoryWarning() {
