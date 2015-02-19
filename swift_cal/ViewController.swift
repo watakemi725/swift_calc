@@ -105,11 +105,13 @@ class ViewController: UIViewController {
     }
     @IBAction func equal(){
         switch(ope){
-            case (1)
+        case (1):
                 num3 = num1 + num2
             break
-            case (2)
+        case (2):
                 num3 = num1 - num2
+            break
+        default:
             break
         }
         
