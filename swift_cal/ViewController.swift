@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet var btn7 : UIButton!
     @IBOutlet var btn8 : UIButton!
     @IBOutlet var btn9 : UIButton!
+    
     @IBOutlet var label1 : UILabel!
     
     var num1 = 0
